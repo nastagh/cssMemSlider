@@ -137,3 +137,15 @@ input {
     display: flex;
 }
 
+#switch1:checked ~ .bottom_container .text_container .slider_text {
+    margin-left: 0;
+}
+#switch2:checked ~ .bottom_container .text_container .slider_text {
+    margin-left: -60vw;
+}
+#switch3:checked ~ .bottom_container .text_container .slider_text {
+    margin-left: -120vw;
+}
+#switch4:checked ~ .bottom_container .text_container .slider_text {
+    margin-left: -180vw;
+}
