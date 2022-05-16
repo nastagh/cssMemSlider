@@ -95,3 +95,45 @@ input {
 #active label:hover .checkbox {
     background: white;
 }
+
+#switch1:checked:hover ~ .bottom_container #active label:nth-child(1) .checkbox,
+#switch2:checked:hover ~ .bottom_container #active label:nth-child(2) .checkbox,
+#switch3:checked:hover ~ .bottom_container #active label:nth-child(3) .checkbox,
+#switch4:checked:hover ~ .bottom_container #active label:nth-child(4) .checkbox{
+    border: 0.15rem solid white;
+}
+
+#switch1:checked ~ .bottom_container #active label:nth-child(1) .checkbox,
+#switch2:checked ~ .bottom_container #active label:nth-child(2) .checkbox,
+#switch3:checked ~ .bottom_container #active label:nth-child(3) .checkbox,
+#switch4:checked ~ .bottom_container #active label:nth-child(4) .checkbox{
+    border: 0.15rem solid #18a3dd;
+    background: transparent;
+}
+
+#switch1:active ~ .bottom_container #active label:nth-child(1) .checkbox,
+#switch2:active ~ .bottom_container #active label:nth-child(2) .checkbox,
+#switch3:active ~ .bottom_container #active label:nth-child(3) .checkbox,
+#switch4:active ~ .bottom_container #active label:nth-child(4) .checkbox{
+    border: 0.15rem solid #0f4962 !important;
+    background: #0f4962;
+}
+
+.text_container {
+    width: 60vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slider_text>div {
+    min-width: 60vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.slider_text {
+    display: flex;
+}
+
