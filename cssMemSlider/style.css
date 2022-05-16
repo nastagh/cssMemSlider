@@ -45,17 +45,18 @@ body {
 }
 
 #switch1:checked ~ .slider_container .container {
-    margin-left: 0;
+    transform: translate(0);
 }
 
 #switch2:checked ~ .slider_container .container {
-    margin-left: -80vw;
+    transform: translate(-80vw);
 }
 #switch3:checked ~ .slider_container .container {
-    margin-left: -160vw;
+    transform: translate(-160vw);
+
 }
 #switch4:checked ~ .slider_container .container {
-    margin-left: -240vw;
+    transform: translate(-240vw);
 }
 
 .container, .slider_text {
@@ -139,16 +140,17 @@ input {
 }
 
 #switch1:checked ~ .bottom_container .text_container .slider_text {
-    margin-left: 0;
+    transform: translate(0);
 }
 #switch2:checked ~ .bottom_container .text_container .slider_text {
-    margin-left: -60vw;
+    transform: translate(-60vw);
+
 }
 #switch3:checked ~ .bottom_container .text_container .slider_text {
-    margin-left: -120vw;
+    transform: translate(-120vw);
 }
 #switch4:checked ~ .bottom_container .text_container .slider_text {
-    margin-left: -180vw;
+    transform: translate(-180vw);
 }
 
 @media all and (max-width: 480px) {
@@ -174,16 +176,17 @@ input {
     }
 
     #switch1:checked ~ .bottom_container .text_container .slider_text {
-        margin-left: 0;
+        transform: translate(0);
     }
     #switch2:checked ~ .bottom_container .text_container .slider_text {
-        margin-left: -80vw;
+        transform: translate(-80vw);
+
     }
     #switch3:checked ~ .bottom_container .text_container .slider_text {
-        margin-left: -160vw;
+        transform: translate(-160vw);
     }
     #switch4:checked ~ .bottom_container .text_container .slider_text {
-        margin-left: -240vw;
+        transform: translate(-240vw);
     }
 }
 
